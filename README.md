@@ -53,7 +53,26 @@ This project focused on both content and functionality — combining clean layou
 
 https://akian-23.github.io/Document-website/
 
+Image Note
 
+This website contains approximately 42 images used throughout various pages.
+Due to GitHub’s file size and repository limits, not all media files could be uploaded.
+As a result, some images, icons, or videos may not display correctly in the Live Demo.
 
-![Screenshot 2025-07-02 142031](https://github.com/user-attachments/assets/3338b190-c937-4f41-b5d4-b6b03c244166)
+Below are a few screenshots that capture the overall design and layout of the site to help visualize the intended experience.
+Thank you for understanding!
+
+![Screenshot 2025-07-02 142031](https://github.com/user-attachments/assets/67d95648-c18b-4dd9-a6d2-8b30c9ce0f26)
+
+![Screenshot 2025-07-02 142108](https://github.com/user-attachments/assets/bccb1eb6-d063-4776-b071-d191ceef4161)
+
+![Screenshot 2025-07-02 142126](https://github.com/user-attachments/assets/40232c31-70f4-46be-ab51-96d1a86ea7a6)
+![Screenshot 2025-07-02 142157](https://github.com/user-attachments/assets/8bbc884b-b57f-43e0-802e-7da87072daf7)
+
+![Screenshot 2025-07-02 142234](https://github.com/user-attachments/assets/17459f02-3c4a-4416-a897-ece1a495e866)
+
+![Screenshot 2025-07-02 142245](https://github.com/user-attachments/assets/6d9a42b6-e110-4434-bcf5-1253bac7361a)
+![Screenshot 2025-07-02 142307](https://github.com/user-attachments/assets/ff3cf043-9758-40b2-a347-b6f931715b41)
+
+![Screenshot 2025-07-02 142333](https://github.com/user-attachments/assets/0c6cd19e-de4b-487a-8c18-39224fe45fa1)
 
