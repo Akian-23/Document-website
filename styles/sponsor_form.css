@@ -1,0 +1,177 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body, html {
+    height: 100%;
+}
+
+/* Background image setup */
+body {
+    background-image: url('../images/IMG_1216.jpeg');
+    background-size: cover;
+    background-position: bottom center; /* this is the key */
+    background-repeat: no-repeat;
+    padding: 95px 0;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Form container styling */
+#sponsor_form {
+    width: 40%;
+    margin: 4em auto;
+    margin-top: 10em;
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 2em;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(3px);
+}
+
+/* Headings */
+#sponsor_form h2 {
+    text-align: center;
+    color: #a51200;
+    margin-bottom: 0.5em;
+    font-size: 2em;
+}
+
+#sponsor_form p {
+    text-align: center;
+    margin-bottom: 1.5em;
+    color: #333;
+    font-size: 1.1em;
+}
+
+/* Input and Textarea Styling */
+#sponsor_form input,
+#sponsor_form textarea {
+    width: 100%;
+    padding: 0.75em;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+}
+
+#sponsor_form legend {
+    font-weight: bold;
+}
+
+#sponsor_form label {
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 0.25em;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Checkbox container */
+#sponsor_form fieldset {
+    margin-top: 1em;
+    border: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;  /* Stack checkboxes vertically */
+}
+
+/* Checkbox labels only */
+#sponsor_form fieldset label {
+    display: flex;
+    margin: 0; 
+    font-weight: normal;
+}
+
+/* Checkbox input itself */
+#sponsor_form fieldset input[type="checkbox"] {
+    margin: 0;
+}
+
+/* Submit Button */
+.submit-button {
+    margin-top: 1.5em;
+    background-color: #a51200;
+    color: white;
+    padding: 0.75em 1.5em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+    display: block;
+    width: 100%;
+}
+
+.submit-button:hover {
+    background-color: #e75710;
+}
+
+/* Thank you message */
+#thank_you {
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+.home-link {
+    position: absolute; /* Position it absolutely within the body */
+    bottom: 20px; /* Space from the bottom of the page */
+    left: 20px; /* Space from the left side of the page */
+    background-color: #e75710;;
+    color: white;
+    padding: 0.5em;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.home-link:hover {
+    background-color: #a51200
+}
+@media only screen and (max-width: 850px) {
+
+    body{
+        margin-top: 3em;
+    }
+    #sponsor_form {
+      width: 90%;
+      padding: 1.5em;
+      margin: 2em auto;
+    }
+  
+    #sponsor_form h2 {
+      font-size: 1.6em;
+    }
+  
+    #sponsor_form p {
+      font-size: 1em;
+    }
+  
+    #sponsor_form input,
+    #sponsor_form textarea {
+      font-size: 0.95em;
+      padding: 0.65em;
+    }
+  
+    .submit-button {
+      font-size: 0.95em;
+      padding: 0.6em 1.2em;
+    }
+  
+    #sponsor_form fieldset label {
+      font-size: 0.95em;
+    }
+  
+    #thank_you h2 {
+      font-size: 1.5em;
+    }
+  
+    #thank_you p {
+      font-size: 1em;
+      padding: 0 1em;
+    }
+  
+}

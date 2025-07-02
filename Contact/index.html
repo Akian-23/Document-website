@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SakPase | Contact</title>
+    <link rel="stylesheet" href="../styles/slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"> </script>
+    <script src="../js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+        $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+        });
+    </script>
+    <link rel="stylesheet" href="../styles/contact.css">
+</head>
+<body>
+    <header>
+        <h1>Music, Joy, and Celebration of Hatian Culture</h1>
+    </header>
+
+    <nav id="mobile_menu"></nav>
+    <nav id="nav_menu">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../About/index.html">About us</a></li>
+            <li><a href="#">Our event</a>
+                <ul class="dropdown" > 
+                    <li><a href="../Sakpase24/index.html">Sak Pase 2024</a></li>
+                    <li><a href="../Sakpase25/index.html">Sak Pase 2025</a></li>
+                </ul>
+            </li>				
+            <li><a class="active" href="../Contact/index.html">Contact</a> </li>
+        </ul>
+    </nav>
+    
+    <main>
+        <div class="content-wrap">
+            
+            <div class="contact-subscribe" >
+                <div class="contact">
+                    <h2>Contact Us</h2>
+                    <p>You got questions or want to vibe with us? Reach out — we’re happy to connect!</p>
+                    <p><a href="tel:+19194587643"><img class="contact-icon" src="../images/viber.png" alt="phone icon"> +1 (919) 458-7643 </a></p>
+                    <p><a href="mailto:Abrgroupentertainment@yahoo.com"><img class="contact-icon" src="../images/email.png" alt="email icon"> Abrgroupentertainment@yahoo.com </a></p>
+                    <p><a href="https://www.instagram.com/sakpasefest/" target="_blank"><img class="contact-icon" src="../images/instagram2.png" alt="Instagram icon"> Sakpasefest </a></p>
+                </div>
+                <div>
+                    <form id="subsform" class="subscribe" action="#" method="get">
+                        <h3>Subscribe and Stay in the Loop!</h3>
+                        <p>Be the first to know about future events, exclusive promos, giveaways, and all things Skapase. Don’t miss a beat! </p>
+                        <label for="email">Email address:</label>
+                        <input type="email" name="email" id="survey_email" autofocus required>
+                        <button type="submit" id="subs_button">Subscribe</button>
+            
+                    </form>
+                    <!-- Subscription Success Message -->
+                    <div id="subs_success_message" style="display:none; ">
+                        Thank you for subscribing! <br>You'll be the first to know about upcoming events and more.
+                    </div>
+                </div>
+            </div>
+            <div class="survey" >
+                <h2>Complete our survey</h2>
+                <form id="surveyform" action="#" method="get">
+                    
+                    <h4>Contact information</h4>
+                    <label for="name">Full name</label><br>
+                    <input type="text" name="name" id="name" required><br>
+                    
+                    <label for="survey_email">Email address</label><br>
+                    <input type="email" name="survey_email" id="email" autofocus required><br>
+                    
+                    <label for="gender">Gender</label><br>
+					<select id="gender_selection" name="gender" required>
+						<optgroup>
+							<option value="" disabled selected>Select a gender</option>
+							<option value="female">F</option>
+							<option value="male">M</option>
+							<option value="nonbinary">Non binary</option>
+							<option value="no">Prefer not to say</option>
+						</optgroup>
+					</select><br>
+
+                    <label for="age">Age Range</label><br>
+					<select id="age_selection" name="age" required>
+						<optgroup>
+							<option value="" disabled selected>Select your age range</option>
+                            <option value="18-20">18-20</option>
+                            <option value="21-28 ">21-28</option>
+							<option value="29-35">29-35</option>
+							<option value="35+">35+</option>
+							<option value="no">Prefer not to say</option>
+						</optgroup>
+					</select>
+            
+                    <h4>How did you hear about us?</h4>
+                    <input type="checkbox" name="insta" id="insta">
+                    <label for="insta">Instagram</label>
+
+                    <input type="checkbox" name="facebook" id="facebook">
+                    <label for="facebook">Facebook</label>
+
+                    <input type="checkbox" name="twitter" id="twitter">
+                    <label for="twitter">X</label>
+
+                    <input type="checkbox" name="whatsapp" id="whatsapp">
+                    <label for="whatsapp">WhatsApp Chanel</label>
+
+                    <h4>Leave a comment, share your ideas, or tell us which artist you’d love to see light up the stage at the next Skapase! </h4>
+                    <textarea id="comment" name="comment" rows="5" placeholder="Your input helps shape the vibe🔥"></textarea>
+
+                    <br><button class="submit-button" type="submit" id="button">Submit</button>
+                </form>
+                <!-- Survey Success Message -->
+                <div id="survey_success_message" style="display:none; ">
+                    Thank you for completing the survey! <br>Your input helps us create better experiences.
+                </div>
+            </div>
+        </div>
+        
+        
+    </main>
+     
+    <footer>
+        <a href="https://www.instagram.com/sakpasefest/" target="_blank">
+            <img class="icon" src="../images/instagram.png" alt="Instagram icon">
+        </a>
+        <p> &copy; SakPase-ABR. All rights reserved.</p>
+    </footer>
+
+
+    <!-- ode for message when submiiting survey or subscribing -->
+
+    <script>
+        $(document).ready(function () {
+    
+            // Subscribe Form 
+            $('#subsform').submit(function (event) {
+                event.preventDefault(); // Prevent the page from refreshing
+                // Show the success message
+                $('#subs_success_message').fadeIn();
+                // Optionally hide the form or reset it
+                $(this).hide();
+            });
+    
+            // Survey Form 
+            $('#surveyform').submit(function (event) {
+                event.preventDefault(); // Prevent the page from refreshing
+                // Show the success message
+                $('#survey_success_message').fadeIn();
+                // Optionally hide the form or reset it
+                $(this).hide();
+            });
+    
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,306 @@
+html{
+    background-color: white;
+}
+body{
+    background-color: #fcd8b6; 
+    height: 100%; 
+    margin: 0 auto;
+    width: 95%;
+    max-width: 1500px;
+}
+
+header {
+   background-image: url('../images/IMG_1216.jpeg');
+    background-size: cover;
+    background-position: bottom center; 
+    background-repeat: no-repeat;
+    padding: 95px 0;
+    width: 100%;
+    height: 55vh;
+}
+header h1{
+    color:whitesmoke;
+    font-size: 3.5em;
+    text-align: center;
+    font-weight: bold;
+    position: relative;
+    top: -40px;
+}
+#mobile_menu{
+    display: none;
+}
+#nav_menu {
+    background-color: #a51200;
+    color: white;
+    padding: 0;
+    border-radius: 2px;
+    font-family: sans-serif;
+    padding: 1rem;
+}
+#nav_menu ul {
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly; 
+}
+
+#nav_menu li {
+    position: relative;
+}
+
+#nav_menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 10px 15px;
+    display: block;
+}
+/* Styling the dropdown */
+#nav_menu .dropdown {
+    display: none; /* Hide the dropdown */
+    position: absolute;
+    background-color: #a51200; 
+    width: 100%;
+    list-style-type: disc; 
+    padding-left: 30px; 
+}
+
+#nav_menu li:hover .dropdown {
+    display: block;
+}
+
+/* Hover effect for links */
+#nav_menu a:hover {
+    border: 2px solid #e75710;
+    background: linear-gradient(to bottom, #fcd8b6, #f68239, #e75710, #a51200);    
+    color: black; 
+    border-radius: 3px; 
+}
+.active{
+    border: 2px solid #e75710;
+    background: linear-gradient(to bottom, #fcd8b6, #f68239, #e75710, #a51200);    
+    border-radius: 3px; 
+}
+
+.content-wrap{
+    position: relative;
+    margin-left: 4em;
+    margin-right: 3em;
+    margin-top: 8em;
+    margin-bottom: 5em;
+}
+.contact-icon{
+    width: 20px;
+    margin-right: 10px; 
+}
+
+.contact p {
+    display: flex;
+    align-items: center; /* Aligns text and icons vertically */
+    margin-bottom: 15px;
+    padding-top: 10px;
+}
+.contact a {
+    text-decoration: none;      
+    color: black;             
+}
+
+.contact a:hover {
+    color: #a51200;            
+    font-style: italic;          
+}
+.contact-subscribe {
+    position: absolute;
+    top: 33%; 
+    left: 15%;
+    transform: translate(-30%, -30%); /* shift it left and up a bit */
+    width: 40%;
+    z-index: 10; /* make sure it's on top */
+    
+    background-color: white;
+    padding: 30px;
+    border: 2px solid white;
+    box-shadow: 
+        5px 5px 15px rgba(0, 0, 0, 0.3),
+        -5px -5px 15px rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    height: 700px;
+}
+
+/* Style the input and button */
+.subscribe input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+}
+.subscribe h3{
+    margin-top: 3em;
+}
+#subs_button {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #a51200;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+.survey {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    width: 60%;
+    margin: 4em auto 1.5em 35%; /* Push it to the right to give space for .contact-subscribe */
+    background: linear-gradient(to bottom, #a51200, #f68239, #e75710, #a51200);    
+    padding: 2em;
+    border: 2px solid #e75710;
+    box-shadow: 
+        5px 5px 15px rgba(0, 0, 0, 0.3),   /* main shadow */
+        -5px -5px 15px rgba(255, 255, 255, 0.3); /* light highlight */
+    box-sizing: border-box;
+    font-size: 1.2em;
+    position: relative;
+    z-index: 1;
+    min-height: 800px;
+}
+
+h2, .survey form{
+    grid-column: 2;
+}
+
+.survey input[type="text"],
+.survey input[type="email"],
+.survey select,
+.survey textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 8px;
+    box-sizing: border-box;
+}
+
+.survey label {
+    margin-right: 1em; /* space between each label */
+}
+
+.submit-button {
+    width:35%;
+    display: block;
+    margin: 2px auto;
+    padding: 8px;
+    border-radius: 4px;
+    background-color: #fcd8b6;
+    border: 1px solid #fcd8b6;
+    color:  #a51200; 
+    font-weight: bold;
+    font-size: .75em;
+}
+
+footer{
+    background-color: #a51200; 
+    color: whitesmoke; 
+    text-align: center;
+    padding: .25em;
+}
+
+.icon{
+    float: left;
+    width: 2em;
+    margin-top: 3px;
+    padding: 4px;
+}
+
+/* subscription success message */
+#subs_success_message {
+    display: none;
+    text-align: center;
+    font-size: 1.2em;
+    color: #a51200;
+    margin-top: 3em ; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* survey success message */
+#survey_success_message  {
+    display: none; /* Initially hidden */
+    font-size: 1.5em;
+    color: whitesmoke;
+    text-align: center;
+    width: 75%;
+    padding: 20px;
+   /* Centering the message inside the survey box */
+   position: absolute;
+   top: 50%; 
+   left: 50%; 
+   transform: translate(-50%, -50%); 
+
+} 
+
+@media only screen and (max-width: 850px) {
+    header {
+        height: 20vh; /* smaller height on mobile */
+        padding-top: 2em; 
+    }
+
+    header h1 {
+        font-size: 2em;
+        padding-top: 1em; 
+        text-align: center;
+        margin: 0; 
+    }
+    #nav_menu {
+        display: none;
+    }
+
+    /* Show slicknav mobile menu */
+    #mobile_menu {
+        display: block;
+        margin-bottom: 1em;
+    }
+        /* Put contact-subscribe and survey ont top of each other */
+        .content-wrap {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 2em auto;
+            padding: 0 1em;
+        }
+    
+        .contact-subscribe,
+        .survey {
+            position: static;
+            transform: none;
+            width: 100%;
+            max-width: 600px;
+            margin: 1em 0;
+            box-sizing: border-box;
+        }
+        .contact-subscribe {
+            height: auto; 
+            padding: 1.5em;
+        }
+    
+        .survey {
+            grid-template-columns: 1fr; 
+            font-size: 1em;
+            min-height: 550px;
+        }
+    
+        h2, .survey form {
+            grid-column: 1;
+        }
+    
+        .survey .submit-button {
+            width: 100%;
+            font-size: 1em;
+        }
+        /* survey success message */
+        #survey_success_message  {
+            font-size: 1.2em;
+            margin: 0 auto;
+            padding: 1em;
+            margin-top: 12em;
+        }
+}

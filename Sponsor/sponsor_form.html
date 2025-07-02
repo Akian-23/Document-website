@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SakPaseFest | Sponsor Proposal</title>
+    <link rel="stylesheet" href="../styles/slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+        });
+    </script>
+    <link rel="stylesheet" href="../styles/sponsor_form.css">
+</head>
+<body>
+    <section id="sponsor_form" class="sponsor-form" >
+        
+        <form id="proposalForm" action="">
+            <h2>Become a Sponsor</h2>
+            <p> Whether you're an individual, a small business, or a big brand — if you're passionate about culture, community, and good vibes, we'd love to connect with you!</p>    
+            
+            <label for="sponsor_name">Full Name / Organization</label>
+            <input type="text" id="sponsor_name" name="sponsor_name" required>
+            
+            <label for="sponsor_email">Email Address</label>
+            <input type="email" id="sponsor_email" name="sponsor_email" required>
+
+            <fieldset>
+                <legend>I'm interested in:</legend>
+                <input type="checkbox" name="interest" id="sponsorship" value="sponsorship">
+                <label for="sponsorship">Sponsoring the event</label>
+
+                <input type="checkbox" name="interest" id="volunteering" value="volunteering">
+                <label for="volunteering">Volunteering</label>
+
+                <input type="checkbox" name="interest" id="donating" value="donating">
+                <label for="donating">Donating</label>
+
+                <input type="checkbox" name="interest" id="collaboration" value="collaboration">
+                <label for="collaboration">Collaborating in another way</label>
+            </fieldset>
+    
+            <label for="message">Message or Proposal Summary</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Tell us a bit about your interest in partnering..."></textarea>
+    
+            <button type="submit" class="submit-button">Submit Proposal</button>
+        </form>
+
+        <div id="thank_you" style="display: none;">
+            <h2>🎉 We've received your proposal !</h2>
+            <p>We appreciate your interest in sponsoring the event and will get back to you shortly. </p>
+        </div>
+
+    </section>
+    <a href="../index.html" class="home-link">Go Back to Home Page</a>
+
+</body>
+<script>
+    document.getElementById("proposalForm").addEventListener("submit", function(event) {
+      event.preventDefault(); // prevent default form submit
+  
+      // Hide the form
+      document.getElementById("proposalForm").style.display = "none";
+  
+      // Show the thank you message
+      document.getElementById("thank_you").style.display = "block";
+    });
+</script>
+
+</html>
